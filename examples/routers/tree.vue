@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Tree :data="baseData" show-checkbox></Tree>
+        <Tree :data="baseData" show-checkbox @on-node-selected="myselect"></Tree>
         <div @click="c">change</div>
     </div>
 </template>
@@ -35,6 +35,9 @@
         methods: {
             c () {
                 this.baseData[0].expand = false;
+            },
+            myselect () {
+            	alert('');
             }
         }
     }

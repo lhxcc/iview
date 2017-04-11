@@ -42,6 +42,7 @@ import Tooltip from './components/tooltip';
 import Transfer from './components/transfer';
 import Tree from './components/tree';
 import Upload from './components/upload';
+import Layout from './components/layout';
 import { Row, Col } from './components/grid';
 import { Select, Option, OptionGroup } from './components/select';
 import locale from './locale';
@@ -115,7 +116,8 @@ const iview = {
     Tooltip,
     Transfer,
     Tree,
-    Upload
+    Upload,
+    Layout
 };
 
 const install = function (Vue, opts = {}) {
